@@ -119,7 +119,7 @@ function drawRelation(startId, endId, oriented, weight) {
     group.add(text);
   }
   
-  relations.add(group);
+  layer.add(group);
 
   startNode.on("dragmove", event => {
     line.points(makeCoords(startNode, endNode));
